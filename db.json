@@ -1,0 +1,92 @@
+{
+  "users": [
+    {
+      "name": "John",
+      "email" : "john21@gmail.com",
+      "phone": "878122",
+      "address": "England",
+      "id" : "5",
+      "status" : "active"
+    },
+    {
+      "name": "Jolly",
+      "email" : "jolly@gmail.com",
+      "phone": "86788",
+      "address": "Indonesia",
+      "id" : "7",
+      "status" : "inactive"
+    },
+    {
+      "name": "Johny",
+      "email" : "johny@gmail.com",
+      "phone": "80122",
+      "address": "Inggris",
+      "id" : "15",
+      "status" : "active"
+    },
+    {
+      "name": "Cathrine",
+      "email" : "cathrine@gmail.com",
+      "phone": "178122",
+      "address": "Seoul",
+      "id" : "85",
+      "status" : "active"
+    },
+    {
+      "name": "Kayy",
+      "email" : "kay@gmail.com",
+      "phone": "3878122",
+      "address": "Nepal",
+      "id" : "15",
+      "status" : "active"
+    },
+    {
+      "name": "Mega",
+      "email" : "mega@gmail.com",
+      "phone": "12345",
+      "address": "India",
+      "id" : "16",
+      "status" : "active"
+    },
+    {
+      "name": "Chiko",
+      "email" : "chiko@gmail.com",
+      "phone": "45678",
+      "address": "Swiss",
+      "id" : "5",
+      "status" : "active"
+    },
+    {
+      "name": "James",
+      "email" : "james@gmail.com",
+      "phone": "678122",
+      "address": "Scotlandia",
+      "id" : "5",
+      "status" : "active"
+    },
+    {
+      "name": "Jono",
+      "email" : "jono@gmail.com",
+      "phone": "36789",
+      "address": "British",
+      "id" : "5",
+      "status" : "active"
+    },
+    {
+      "name": "Jiy",
+      "email" : "jiy@gmail.com",
+      "phone": "53457",
+      "address": "Korea",
+      "id" : "10",
+      "status" : "active"
+    },
+    {
+      "name": "Michael",
+      "email" : "michael@gmail.com",
+      "phone": "97654",
+      "address": "Hongkong",
+      "id" : "5",
+      "status" : "active"
+    }
+  ]
+}
