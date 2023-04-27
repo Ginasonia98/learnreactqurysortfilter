@@ -237,7 +237,6 @@ function App() {
           Reset
         </MDBBtn>
       </form>
-      <div style={{ marginTop: "100px" }}>
         <h2 className="text-center ">
           Search,Filter,Sort,and Pagination using JSON Fake Rest Api
         </h2>
@@ -279,17 +278,9 @@ function App() {
             </MDBTable>
           </MDBCol>
         </MDBRow>
-        <div
-          style={{
-            margin: "auto",
-            padding: "15px",
-            maxWidth: "250px",
-            alignContent: "center",
-          }}
-        >
           {renderPagination()}
           {data.length > 0 && (
-            <MDBRow>
+            <MDBRow className="mt-4">
               <MDBCol size="8">
                 <h5>Sort By:</h5>
                 <select
@@ -325,8 +316,6 @@ function App() {
               </MDBCol>
             </MDBRow>
           )}
-        </div>
-      </div>
     </MDBContainer>
   );
 }
