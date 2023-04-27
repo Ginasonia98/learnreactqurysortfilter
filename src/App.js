@@ -134,7 +134,7 @@ function App() {
     if (data.length < 4 && currentPage === 0) return null;
     if (currentPage === 0) {
       return (
-        <MDBPagination className="mb-0">
+        <MDBPagination className="mb-0 d-flex justify-content-center">
           <MDBPaginationItem>
             <MDBPaginationLink>1</MDBPaginationLink>
           </MDBPaginationItem>
@@ -237,6 +237,7 @@ function App() {
           Reset
         </MDBBtn>
       </form>
+      <div style={{ marginTop: "100px" }}>
         <h2 className="text-center ">
           Search,Filter,Sort,and Pagination using JSON Fake Rest Api
         </h2>
@@ -278,44 +279,49 @@ function App() {
             </MDBTable>
           </MDBCol>
         </MDBRow>
-          {renderPagination()}
-          {data.length > 0 && (
-            <MDBRow className="mt-4">
-              <MDBCol size="8">
-                <h5>Sort By:</h5>
-                <select
-                  onChange={handleSort}
-                  value={sortValue}
-                  style={{ width: "50%", borderRadius: "2px", height: "35px" }}
-                >
-                  <option>Please Select value</option>
-                  {sortOptions.map((item, index) => (
-                    <option value={item} key={index}>
-                      {item}
-                    </option>
-                  ))}
-                </select>
-              </MDBCol>
-              <MDBCol size="4">
-                <h5>Filter By Status:</h5>
-                <MDBBtnGroup>
-                  <MDBBtn
-                    onClick={() => handleFilter("active")}
-                    color="success"
-                  >
-                    Active
-                  </MDBBtn>
-                  <MDBBtn
-                    onClick={() => handleFilter("inactive")}
-                    style={{ marginLeft: "2px" }}
-                    color="danger"
-                  >
-                    Inactive
-                  </MDBBtn>
-                </MDBBtnGroup>
-              </MDBCol>
-            </MDBRow>
-          )}
+      </div>
+      <div
+        style={{
+          margin: "auto",
+          padding: "15px",
+          alignContent: "center",
+        }}
+      ></div>
+      {renderPagination()}
+      {data.length > 0 && (
+        <MDBRow>
+          <MDBCol className="mt-3" size="8">
+            <h5>Sort By:</h5>
+            <select
+              onChange={handleSort}
+              value={sortValue}
+              style={{ width: "50%", borderRadius: "2px", height: "35px" }}
+            >
+              <option>Please Select value</option>
+              {sortOptions.map((item, index) => (
+                <option value={item} key={index}>
+                  {item}
+                </option>
+              ))}
+            </select>
+          </MDBCol>
+          <MDBCol size="4">
+            <h5>Filter By Status:</h5>
+            <MDBBtnGroup>
+              <MDBBtn onClick={() => handleFilter("active")} color="success">
+                Active
+              </MDBBtn>
+              <MDBBtn
+                onClick={() => handleFilter("inactive")}
+                style={{ marginLeft: "2px" }}
+                color="danger"
+              >
+                Inactive
+              </MDBBtn>
+            </MDBBtnGroup>
+          </MDBCol>
+        </MDBRow>
+      )}
     </MDBContainer>
   );
 }
