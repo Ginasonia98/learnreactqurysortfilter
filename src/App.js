@@ -149,7 +149,7 @@ function App() {
       );
     } else if (currentPage < pageLimit - 1 && data.length === pageLimit) {
       return (
-        <MDBPagination className="mb-0">
+        <MDBPagination className="mb-0 d-flex justify-content-center">
           <MDBPaginationItem>
             <MDBBtn
               onClick={() =>
@@ -187,7 +187,7 @@ function App() {
       );
     } else {
       return (
-        <MDBPagination className="mb-0">
+        <MDBPagination className="mb-0 d-flex justify-content-center">
           <MDBPaginationItem>
             <MDBBtn
               onClick={() =>
